@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="github-link">
+        <a href="https://hub.ferretosan.com" rel="noopener noreferrer">
+            <img src="to-hub.png" alt="Hub">
+        </a>
+    </div>
+
+    <div class="game-container">
+        <div class="top-controls">
+            <div class="action-controls">
+                <div class="game-controls" id="game-controls" style="display: none;">
+                    <button id="hit-btn" onclick="playerHit()">Hit</button>
+                    <button id="stand-btn" onclick="playerStand()">Stand</button>
+                </div>
+
+                <div class="new-game-controls" id="new-game-controls" style="display: none;">
+                    <button id="new-game-btn" onclick="newGame()">New Game</button>
+                </div>
+
+                <div class="simple-start-controls" id="simple-start-controls">
+                    <button id="start-game-btn" onclick="startGame()">Start Game</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <h1>Ferret's Blackjack</h1>
+        </header>
+
+        <div class="game-area">
+            <!-- Dealer Section -->
+            <div class="dealer-section">
+                <h2>Dealer</h2>
+                <div class="hand" id="dealer-hand">
+                    <!-- Dealer cards will be added here -->
+                </div>
+                <div class="hand-value" id="dealer-value">Value: 0</div>
+            </div>
+
+            <!-- Game Messages -->
+            <div class="game-messages">
+                <div id="game-message">Click "Start Game" to play!</div>
+            </div>
+            <!-- Player Section -->
+            <div class="player-section">
+                <h2>Player</h2>
+                <div class="hand" id="player-hand">
+                    <!-- Player cards will be added here -->
+                </div>
+                <div class="hand-value" id="player-value">Value: 0</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Card design by georgeblackwell on itch.io
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
